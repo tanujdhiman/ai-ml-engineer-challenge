@@ -52,7 +52,7 @@ You are tasked with building a **machine learning-powered API** that predicts a 
 
 ---
 
-## **✅ Key Takeaways and additional guidelines **  
+## **✅ Key Takeaways and additional guidelines**  
 - The emphasis is on building a **functional end-to-end system**, rather than optimizing the model’s performance. That said, we do expect to see a vectorization + ML model or NLP processing.
 - **Keep** the training and model creation code also on this repo.
 - Apart from using Python as the programming language, you **may choose your tech stack**, as long as the required functionality is met.
