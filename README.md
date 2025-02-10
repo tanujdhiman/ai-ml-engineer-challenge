@@ -12,7 +12,7 @@ This challenge is **not about building the most accurate model** but rather **ab
 
 ### **1️⃣ Problem Statement**  
 You are tasked with building a **machine learning-powered API** that predicts a person’s MBTI personality type based on their text input. You will:  
-- Train an ML model using the **MBTI dataset** ([Zenodo dataset](https://zenodo.org/record/1323873)).  
+- Train an ML model using the **MBTI dataset** ([Kaggle Reddit clean dataset](https://www.kaggle.com/datasets/zeyadkhalid/mbti-personality-types-500-dataset/data)).  
 - Deploy the model as a **REST API** (choice of web framework is up to you).  
 - Containerize the application using **Docker**.  
 - Implement **CI/CD automation** for testing and building the API.  
