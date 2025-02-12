@@ -57,6 +57,7 @@ You are tasked with building a **machine learning-powered API** that predicts a 
 - **Keep** the training and model creation code also on this repo.
 - Apart from using Python as the programming language, you **may choose your tech stack**, as long as the required functionality is met.
 - Feel free to do **AI-assisted programming** for this task, we expect you to. Keep in mind, we also expect that you demonstrate clear understanding and control over the entire process, including every choice made.
+- The focus of this challenge is to keep the setup simple. Point out any aspects you believe might be necessary, for example about model management.
 
 ---
 
