@@ -56,5 +56,12 @@ You are tasked with building a **machine learning-powered API** that predicts a 
 - The emphasis is on building a **functional end-to-end system**, rather than optimizing the model’s performance. That said, we do expect to see a vectorization + ML model or NLP processing.
 - **Keep** the training and model creation code also on this repo.
 - Apart from using Python as the programming language, you **may choose your tech stack**, as long as the required functionality is met.
-- Feel free to do **AI-assisted programming** for this task, however we expect that you do demonstrate clear understanding and control over the entire process, including every choice made.
+- Feel free to do **AI-assisted programming** for this task, we expect you to. Keep in mind, we also expect that you demonstrate clear understanding and control over the entire process, including every choice made.
 
+---
+
+## **📩 Submission Instructions**  
+1. **Fork this repository** to your own GitHub account.  
+2. Implement your solution in your forked repository.  
+3. Once completed, **submit your forked repository link** to the email address from which you received this challenge.  
+4. You are **welcome to modify the README** to highlight your work and make it a valuable addition to your portfolio.  
