@@ -1,68 +1,238 @@
-# **Machine Learning Engineer Coding Challenge**  
-## **Personality Type Predictor API**  
+# Personality Type Predictor API
 
-### **📌 Overview**  
-The goal of this challenge is to **build an API that predicts a user’s MBTI personality type** based on text input.  
-
-This challenge is **not about building the most accurate model** but rather **about demonstrating your ability to set up an end-to-end system**—including data processing, model serving, API development, containerization, and CI/CD.  
+![Project Banner](https://via.placeholder.com/1200x400.png?text=MBTI+Personality+Type+Predictor)  
+*Predict your MBTI personality type based on text input using Machine Learning and FastAPI.*
 
 ---
 
-## **🛠️ Challenge Specifications**  
+## 📌 Overview
 
-### **1️⃣ Problem Statement**  
-You are tasked with building a **machine learning-powered API** that predicts a person’s MBTI personality type based on their text input. You will:  
-- Train an ML model using the **MBTI dataset** ([Kaggle Reddit clean dataset](https://www.kaggle.com/datasets/zeyadkhalid/mbti-personality-types-500-dataset/data)).  
-- Deploy the model as a **REST API** (choice of web framework is up to you).  
-- Containerize the application using **Docker**.  
-- Implement **CI/CD automation** for testing and building the API.  
-- **(Bonus)** Integrate a **self-hosted open-source monitoring tool** to track API requests and model confidence scores.  
-
-### **2️⃣ Technical Requirements**  
-
-#### **🧠 Machine Learning**
-- Train a simple classifier that predicts an MBTI type.  
-- Model accuracy **is not the main focus**, but the system must output a personality type.  
-- **(Bonus)** Include a **confidence score** in the API response.  
-
-#### **🖥️ API Development**  
-- Implement a REST API with **at least one endpoint**:  
-  - `POST /predict` → Accepts a JSON payload with text input and returns the predicted MBTI type (+ optional confidence).  
-  - Example Input:  
-    ```json
-    {"text": "I love deep conversations and thinking about abstract ideas."}
-    ```  
-  - Example Output:  
-    ```json
-    {
-      "mbti_type": "INFJ",
-      "confidence": 0.87
-    }
-    ```  
-- You **choose the web framework** (Django, Flask, FastAPI, etc.).  
-
-#### **📦 Containerization**  
-- Provide a **Dockerfile** to package the API and dependencies.  
-- The API should run locally using `docker run`.  
-
-#### **🛠️ CI/CD Pipeline**  
-- Use **GitHub Actions** (or GitLab CI) to:  
-  - Run **automated tests** for API functionality. Keep it simple: one or two simple tests are enough.
-  - Build a **Docker image** upon successful tests.  
+The **Personality Type Predictor API** is a machine learning-powered application that predicts a user's MBTI (Myers-Briggs Type Indicator) personality type based on their text input. This project demonstrates end-to-end development, including data processing, model training, API development, containerization, and CI/CD automation.
 
 ---
 
-## **✅ Key Takeaways and additional guidelines**  
-- The emphasis is on building a **functional end-to-end system**, rather than optimizing the model’s performance. That said, we do expect to see a vectorization + ML model or NLP processing.
-- **Keep** the training and model creation code also on this repo.
-- Apart from using Python as the programming language, you **may choose your tech stack**, as long as the required functionality is met.
-- Feel free to do **AI-assisted programming** for this task, we expect you to. Keep in mind, we also expect that you demonstrate clear understanding and control over the entire process, including every choice made.
-- The focus of this challenge is to keep the setup simple. Point out any aspects you believe might be necessary, for example about model management.
+## 🚀 Features
+
+- **MBTI Personality Prediction**: Predicts one of the 16 MBTI types based on user-provided text.
+- **Confidence Score**: Provides a confidence score for the prediction.
+- **Modern Frontend**: A clean, interactive, and visually appealing frontend for user interaction.
+- **REST API**: Built with **FastAPI** for high performance and scalability.
+- **Containerization**: Dockerized for easy deployment and reproducibility.
+- **CI/CD Pipeline**: Automated testing and Docker image building using GitHub Actions.
+- **Monitoring**: Integrated with **Prometheus** and **Grafana** for API and model performance monitoring.
 
 ---
 
-## **📩 Submission Instructions**  
-1. **Fork this repository** to your own GitHub account.  
-2. Implement your solution in your forked repository.  
-3. Once completed, **submit your forked repository link** to the email address from which you received this challenge.  
-4. You are **welcome to modify the README** to highlight your work and make it a valuable addition to your portfolio.  
+## 🛠️ Technical Stack
+
+- **Machine Learning**: Scikit-learn, Random Forest Classifier, TF-IDF Vectorization.
+- **Backend**: FastAPI, Python.
+- **Frontend**: HTML, CSS, JavaScript.
+- **Containerization**: Docker.
+- **CI/CD**: GitHub Actions.
+- **Monitoring**: Prometheus, Grafana.
+
+---
+
+## 📂 Project Structure
+
+```
+mbti-predictor-api/
+├── data/                       # Dataset folder
+│   └── MBTI 500.csv            # MBTI dataset
+├── models/                     # Trained models
+│   └── mbti_model.joblib       # Serialized model
+├── static/                     # Static files (CSS, JS)
+│   ├── css/
+│   │   └── styles.css          # Frontend styles
+│   └── js/
+│       └── script.js           # Frontend interactivity
+├── templates/                  # HTML templates
+│   └── index.html              # Frontend page
+├── tests/                      # Test cases
+│   ├── __init__.py
+│   ├── test_api.py             # API tests
+│   └── test_model.py           # Model tests
+├── app.py                      # FastAPI application
+├── train.py                    # Model training script
+├── predictor.py                # Model prediction script
+├── requirements.txt            # Python dependencies
+├── Dockerfile                  # Dockerfile for containerization
+├── docker-compose.yml          # Docker Compose for monitoring
+├── prometheus.yml              # Prometheus configuration
+├── .env                        # Environment variables
+├── .github/                    # CI/CD workflows
+│   └── workflows/
+│       └── ci-cd.yml           # GitHub Actions workflow
+└── README.md                   # Project documentation
+```
+
+---
+
+## 🧠 Machine Learning Model
+
+### Model Details
+- **Algorithm**: Random Forest Classifier.
+- **Vectorization**: TF-IDF with n-grams (1, 2).
+- **Accuracy**: Achieved ~XX% accuracy on the test set (can be updated after training).
+
+### Training Process
+1. **Data Preprocessing**:
+   - Load and clean the MBTI dataset.
+   - Split the data into training and testing sets.
+2. **Model Training**:
+   - Train a Random Forest classifier using TF-IDF vectorization.
+3. **Model Evaluation**:
+   - Evaluate the model on the test set and log accuracy.
+4. **Model Serialization**:
+   - Save the trained model to `models/mbti_model.joblib`.
+
+---
+
+## 🖥️ API Endpoints
+
+### `POST /predict`
+Predicts the MBTI personality type based on the input text.
+
+#### Request
+```json
+{
+  "text": "I love deep conversations and thinking about abstract ideas."
+}
+```
+
+#### Response
+```json
+{
+  "mbti_type": "INFJ",
+  "confidence": 0.87
+}
+```
+
+---
+
+## 🎨 Frontend
+
+### Features
+- **Interactive Input Field**: Users can enter text to get their MBTI prediction.
+- **Loading Animation**: Displays a spinner while the prediction is being processed.
+- **Attractive Result Display**: Shows the predicted MBTI type and confidence score in a visually appealing way.
+
+### Screenshots
+
+#### Home Page
+![Home Page](https://via.placeholder.com/800x400.png?text=Home+Page)
+
+#### Prediction Result
+![Prediction Result](https://via.placeholder.com/800x400.png?text=Prediction+Result)
+
+---
+
+## 🐳 Dockerization
+
+The project is containerized using Docker for easy deployment.
+
+### Build Docker Image
+```bash
+docker build -t mbti-predictor-api .
+```
+
+### Run Docker Container
+```bash
+docker run -p 8000:8000 mbti-predictor-api
+```
+
+---
+
+## 🔧 CI/CD Pipeline
+
+The project uses **GitHub Actions** for continuous integration and deployment.
+
+### Workflow Steps
+1. **Run Tests**: Execute unit tests for the API and model.
+2. **Build Docker Image**: Build the Docker image upon successful tests.
+3. **Push to Docker Hub**: Push the Docker image to Docker Hub (optional).
+
+---
+
+## 📊 Monitoring
+
+The project is integrated with **Prometheus** and **Grafana** for monitoring API requests and model performance.
+
+### Setup
+1. Start the monitoring stack:
+   ```bash
+   docker-compose up
+   ```
+2. Access Prometheus: `http://localhost:9090`
+3. Access Grafana: `http://localhost:3000` (default credentials: admin/admin)
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Python 3.9+
+- Docker (optional)
+- Git
+
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/tanujdhiman/ai-ml-engineer-challenge.git
+   cd ai-ml-engineer-challenge
+   ```
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Train the model:
+   ```bash
+   python train.py
+   ```
+4. Run the API:
+   ```bash
+   uvicorn app:app --host 0.0.0.0 --port 8000
+   ```
+5. Access the frontend: `http://localhost:8000`
+
+---
+
+## 🧪 Running Tests
+
+To run the unit tests:
+```bash
+pytest tests/
+```
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please follow these steps:
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/YourFeature`).
+3. Commit your changes (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature/YourFeature`).
+5. Open a pull request.
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
+
+---
+
+## 🙏 Acknowledgments
+
+- Dataset: [MBTI Kaggle Dataset](https://www.kaggle.com/datasets/datasnaek/mbti-type)
+- FastAPI: [FastAPI Documentation](https://fastapi.tiangolo.com/)
+- Scikit-learn: [Scikit-learn Documentation](https://scikit-learn.org/stable/)
+
+---
+
+Made with ❤️ by **Tanuj**  
+🚀 Happy Coding!
+
+---
