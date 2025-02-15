@@ -19,8 +19,8 @@ jobs:
 
       - name: Debug model file
         run: |
-          ls -l path/to/model.pkl
-          file path/to/model.pkl
+          ls -l models/mbti_model.joblib
+          file models/mbti_model.joblib
 
       - name: Set up Python
         uses: actions/setup-python@v4
