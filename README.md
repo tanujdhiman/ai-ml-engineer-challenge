@@ -76,7 +76,7 @@ mbti-predictor-api/
 ### Model Details
 - **Algorithm**: Random Forest Classifier.
 - **Vectorization**: TF-IDF with n-grams (1, 2).
-- **Accuracy**: Achieved ~XX% accuracy on the test set (can be updated after training).
+- **Accuracy**: Achieved ~70% accuracy on the test set (can be updated after training).
 
 ### Training Process
 1. **Data Preprocessing**:
