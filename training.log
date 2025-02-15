@@ -1,0 +1,153 @@
+2025-02-14 11:52:57,020 - INFO - Loading data from data/MBTI 500.csv
+2025-02-14 11:53:01,830 - INFO - 
+Dataset Overview:
+2025-02-14 11:53:01,831 - INFO - Total samples: 106067
+2025-02-14 11:53:01,831 - INFO - 
+MBTI Type Distribution:
+2025-02-14 11:53:01,848 - INFO - type
+INTP    24961
+INTJ    22427
+INFJ    14963
+INFP    12134
+ENTP    11725
+ENFP     6167
+ISTP     3424
+ENTJ     2955
+ESTP     1986
+ENFJ     1534
+ISTJ     1243
+ISFP      875
+ISFJ      650
+ESTJ      482
+ESFP      360
+ESFJ      181
+Name: count, dtype: int64
+2025-02-14 11:53:01,866 - INFO - Preprocessing text data...
+2025-02-14 12:04:16,556 - INFO - 
+Text Statistics:
+2025-02-14 12:04:16,583 - INFO - Average words per post: 483.09
+2025-02-14 12:04:16,603 - INFO - Median words per post: 485.00
+2025-02-14 12:04:16,605 - INFO - Starting model training...
+2025-02-14 12:04:16,747 - INFO - Applying SMOTE for class balancing...
+2025-02-14 12:08:52,771 - INFO - Performing grid search for hyperparameter tuning...
+2025-02-14 12:11:44,188 - ERROR - Error during training: [WinError 1450] Insufficient system resources exist to complete the requested service
+2025-02-14 16:01:26,402 - INFO - Loading data from data/MBTI 500.csv
+2025-02-14 16:01:31,871 - INFO - 
+Dataset Overview:
+2025-02-14 16:01:31,873 - INFO - Total samples: 106067
+2025-02-14 16:01:31,874 - INFO - 
+MBTI Type Distribution:
+2025-02-14 16:01:31,901 - INFO - type
+INTP    24961
+INTJ    22427
+INFJ    14963
+INFP    12134
+ENTP    11725
+ENFP     6167
+ISTP     3424
+ENTJ     2955
+ESTP     1986
+ENFJ     1534
+ISTJ     1243
+ISFP      875
+ISFJ      650
+ESTJ      482
+ESFP      360
+ESFJ      181
+Name: count, dtype: int64
+2025-02-14 16:01:31,935 - INFO - Preprocessing text data...
+2025-02-14 17:15:39,567 - INFO - Loading data from data/MBTI 500.csv
+2025-02-14 17:15:44,242 - INFO - 
+Dataset Overview:
+2025-02-14 17:15:44,242 - INFO - Total samples: 106067
+2025-02-14 17:15:44,242 - INFO - 
+MBTI Type Distribution:
+2025-02-14 17:15:44,269 - INFO - type
+INTP    24961
+INTJ    22427
+INFJ    14963
+INFP    12134
+ENTP    11725
+ENFP     6167
+ISTP     3424
+ENTJ     2955
+ESTP     1986
+ENFJ     1534
+ISTJ     1243
+ISFP      875
+ISFJ      650
+ESTJ      482
+ESFP      360
+ESFJ      181
+Name: count, dtype: int64
+2025-02-14 17:15:44,276 - INFO - Preprocessing text data...
+2025-02-14 17:27:02,245 - INFO - 
+Text Statistics:
+2025-02-14 17:27:02,259 - INFO - Average words per post: 483.09
+2025-02-14 17:27:02,270 - INFO - Median words per post: 485.00
+2025-02-14 17:27:02,270 - INFO - Starting model training...
+2025-02-14 17:27:02,395 - INFO - Applying SMOTE for class balancing...
+2025-02-14 17:31:52,222 - INFO - Performing grid search for hyperparameter tuning...
+2025-02-14 17:31:52,302 - ERROR - Error during training: The 'cv' parameter of GridSearchCV must be an int in the range [2, inf), an object implementing 'split' and 'get_n_splits', an iterable or None. Got 1 instead.
+2025-02-14 17:39:26,247 - INFO - Loading data from data/MBTI 500.csv
+2025-02-14 17:39:32,297 - INFO - 
+Dataset Overview:
+2025-02-14 17:39:32,297 - INFO - Total samples: 106067
+2025-02-14 17:39:32,297 - INFO - 
+MBTI Type Distribution:
+2025-02-14 17:39:32,316 - INFO - type
+INTP    24961
+INTJ    22427
+INFJ    14963
+INFP    12134
+ENTP    11725
+ENFP     6167
+ISTP     3424
+ENTJ     2955
+ESTP     1986
+ENFJ     1534
+ISTJ     1243
+ISFP      875
+ISFJ      650
+ESTJ      482
+ESFP      360
+ESFJ      181
+Name: count, dtype: int64
+2025-02-14 17:39:32,322 - INFO - Preprocessing text data...
+2025-02-14 17:50:44,171 - INFO - 
+Text Statistics:
+2025-02-14 17:50:44,172 - INFO - Average words per post: 483.09
+2025-02-14 17:50:44,181 - INFO - Median words per post: 485.00
+2025-02-14 17:50:44,181 - INFO - Starting model training...
+2025-02-14 17:50:44,286 - INFO - Applying SMOTE for class balancing...
+2025-02-14 21:40:43,347 - INFO - 
+Cross-validation scores: [0.64733958 0.64904838 0.64922515 0.65350619 0.64843842]
+2025-02-14 21:40:43,364 - INFO - Mean CV score: 0.650 (+/- 0.004)
+2025-02-14 21:45:27,666 - INFO - 
+Classification Report:
+2025-02-14 21:45:27,668 - INFO -               precision    recall  f1-score   support
+
+        ENFJ       0.00      0.00      0.00       307
+        ENFP       0.89      0.34      0.49      1233
+        ENTJ       0.95      0.09      0.16       591
+        ENTP       0.81      0.52      0.63      2345
+        ESFJ       0.00      0.00      0.00        36
+        ESFP       0.00      0.00      0.00        72
+        ESTJ       1.00      0.14      0.24        96
+        ESTP       0.98      0.48      0.65       397
+        INFJ       0.71      0.72      0.72      2993
+        INFP       0.77      0.63      0.69      2427
+        INTJ       0.65      0.82      0.72      4486
+        INTP       0.56      0.92      0.70      4992
+        ISFJ       0.00      0.00      0.00       130
+        ISFP       0.00      0.00      0.00       175
+        ISTJ       0.00      0.00      0.00       249
+        ISTP       0.97      0.15      0.26       685
+
+    accuracy                           0.66     21214
+   macro avg       0.52      0.30      0.33     21214
+weighted avg       0.68      0.66      0.62     21214
+
+2025-02-14 21:45:30,807 - INFO - Saving model to models\mbti_model.joblib
+2025-02-14 21:45:31,065 - INFO - Saving preprocessor to models\preprocessor.joblib
+2025-02-14 21:45:31,081 - INFO - Training completed successfully!
