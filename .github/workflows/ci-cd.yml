@@ -17,7 +17,7 @@ jobs:
         with:
           lfs: true  # Fetch LFS files
 
-      - name: Debug model file
+      - name: Model utilities
         run: |
           ls -l models/mbti_model.joblib
           file models/mbti_model.joblib
