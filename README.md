@@ -1,6 +1,5 @@
 # Personality Type Predictor API
-
-![Project Banner](https://via.placeholder.com/1200x400.png?text=MBTI+Personality+Type+Predictor)  
+ 
 *Predict your MBTI personality type based on text input using Machine Learning and FastAPI.*
 
 ---
@@ -53,6 +52,9 @@ mbti-predictor-api/
 │   ├── __init__.py
 │   ├── test_api.py             # API tests
 │   └── test_model.py           # Model tests
+├── media/                      # Images and Recordings
+│   ├── home.png                  # Home Image
+│   ├── recording.mp4             # Recorded Video
 ├── app.py                      # FastAPI application
 ├── train.py                    # Model training script
 ├── predictor.py                # Model prediction script
@@ -121,10 +123,10 @@ Predicts the MBTI personality type based on the input text.
 ### Screenshots
 
 #### Home Page
-![Home Page](https://via.placeholder.com/800x400.png?text=Home+Page)
+![Home Page](media/home.png)
 
 #### Prediction Result
-![Prediction Result](https://via.placeholder.com/800x400.png?text=Prediction+Result)
+![Prediction Result](media/recording.mp4)
 
 ---
 
