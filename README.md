@@ -126,7 +126,7 @@ Predicts the MBTI personality type based on the input text.
 ![Home Page](media/home.png)
 
 #### Demo Video
-<iframe width="800" height="450" src="https://youtu.be/Y2DyW1e_veM" frameborder="0" allowfullscreen></iframe>
+<iframe width="800" height="450" src="https://www.youtube.com/embed/Y2DyW1e_veM" frameborder="0" allowfullscreen></iframe>
 
 ---
 
